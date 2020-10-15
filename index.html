@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar d-flex justify-content-between">
+                <div class="navLeft d-flex justify-content-around align-items-center">
+                    <a href="index.html" class="logo pb-3 pl-3"><img src="public/images/logo-tmdb.svg" id="logo" alt="Logo TMDB"></a>
+                    <p class="textNavbar">Movies</p>
+                    <p class="textNavbar">TVShows</p>
+                    <p class="textNavbar">People</p>
+                    <p class="textNavbar">More</p>
+                </div>
+                <div class="navRight">
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <main class="d-flex flex-column align-items-center">
+        <section id="searChSection" class="d-flex flex-column align-items-center">
+            <div class="textSearchSection">
+                <h2 class="text-light">Welcome</h2>
+                <h3 class="text-light">Millions of movies, TV shows and people to discover. Explore now.</h3>
+            </div>
+            <div class="width100" class="d-flex">
+                <form action="searchResults.html" method="get" class="width100">
+                    <input type="text" name="query" id="searchBar" class="m-3">
+                    <input type="hidden" name="type" value="movie" id="searchBar" class="m-3">
+                    <input type="submit" value="search" id="searchButton">  
+                </form>
+            </div>
+            
+        </section>
+        <section id="randomSection" class="d-flex flex-column align-items-center">
+            <h3 class="textSearchSection">What's popular</h3>
+            <div id="randMoviesDiv" class="d-flex justify-content-around">
+
+            </div>
+        </section>
+    </main>
+</body>
+<script src="public/js/popular.js"></script>
+</html>

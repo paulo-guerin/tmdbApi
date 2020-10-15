@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/css/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navbar d-flex justify-content-between">
+                    <div class="navLeft d-flex justify-content-around align-items-center">
+                        <a href="index.html" class="logo pb-3 pl-3"><img src="public/images/logo-tmdb.svg" id="logo" alt="Logo TMDB"></a>
+                        <p class="textNavbar">Movies</p>
+                        <p class="textNavbar">TVShows</p>
+                        <p class="textNavbar">People</p>
+                        <p class="textNavbar">More</p>
+                    </div>
+                    <div class="navRight">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="d-flex flex-column align-items-center width100"> 
+            <div id ="searchDiv" class="d-flex mt-4">
+                <form action="searchResults.html" method="get" class="width100">
+                    <input type="text" name="query" id="searchBar" class="m-3">
+                    <input type="hidden" name="type" value="movie" id="searchBar" class="m-3">
+                    <input type="submit" value="search" id="searchButton">  
+                </form>
+            </div>
+            <div id="resultsAndCategories" class="d-flex width100">
+                <section id="categorySection" class="mt-2" >
+                    <h3 class="bg-info">Search Results</h3>
+                    <div id="buttonContainer">
+                        <button class="btnStyle" id="movie">Movies</button>
+                        <button class="btnStyle" id="tv">Series</button>
+                        <button class="btnStyle" id="person">Person</button>
+                        <button class="btnStyle" id="collection">Collections</button>
+                    </div>
+                </section>
+                <section id="resultsSection" class="mt-2">
+                    <div id="resultsContainer" class="width100"></div>
+                </section>
+            </div>
+            
+        </main>
+    </body>
+    <script src="public/js/searchResults.js"></script>
+    </html>

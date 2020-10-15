@@ -1,0 +1,132 @@
+body{
+    max-height: 100%;
+    max-width:100%;
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    height:12%;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: rgb(16, 16, 75);
+    z-index:1;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    width:20%;
+    height: 90%;
+}
+#logo{
+    width:100%;
+    height:100%;
+}
+.textNavbar{
+    color:white;
+    font-weight: bold;
+}
+
+#searChSection{
+    width:80%;
+    background-color: rgb(16, 16, 75);
+}
+
+main{
+    margin-top:3%;
+}
+
+#searchBar{
+    width:90%;
+    border-radius: 15px;
+}
+
+.textSearchSection{
+    width:90%;
+}
+
+#randomSection{
+    width:90%;
+}
+
+#randMoviesDiv{
+    width:90vw;
+}
+.randMovieDiv{
+    width:200px;
+    height:350px;
+    margin-left:10px
+}
+
+.posterDivPop{
+    height:85%;
+    width:100%;
+}
+
+.width100{
+    width:100%;
+}
+
+#categorySection{
+    width:20%;
+
+}
+
+#resultsSection{
+    width:78%;
+}
+
+.btnStyle{
+    display:block;
+    width:100%;
+}
+
+#searchDiv{
+    width:80%;
+}
+
+.resultDiv{
+    height:300px;
+    width:100%;
+    display:flex;
+    margin-left:10px;
+    margin-bottom:10px;
+    border:rgb(207, 201, 201);
+    background-color:rgb(207, 201, 201);
+    border-radius:15px;
+}
+.posterDiv{
+    height:100%;
+    width:20%;
+}
+
+.posterLink{
+    width:100%;
+    height:100%;
+}
+.descriptionDiv{
+    width:88%;
+    height:100%;
+    margin-left:10px;
+}
+
+.posterImg{
+    width:100%;
+    height:100%;
+}
+
+#elementContainer{
+    height:80vh;
+    width:100%;
+}
+#elementImg{
+    width: 25%;
+    height:auto;
+}
+
+#elementDescription{
+    width:70%;
+    height:100%;
+}
